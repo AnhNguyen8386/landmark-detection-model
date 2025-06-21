@@ -245,5 +245,16 @@ def generate_target(img, pt, sigma, label_type='Gaussian'):
     return img
 
 
+def affine_transform(pt, t):
+    """
+    Dùng affine matrix `t` để biến đổi tọa độ điểm `pt`.
+    - pt: (x, y)
+    - t: 2x3 affine matrix
+    """
+    new_pt = np.array([pt[0], pt[1], 1.])
+    new_pt = np.dot(t, new_pt)
+    return new_pt
+
+
 
 

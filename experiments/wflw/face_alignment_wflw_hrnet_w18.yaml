@@ -17,11 +17,11 @@ MODEL:
   PRETRAINED: 'hrnetv2_pretrained/hrnetv2_w18_imagenet_pretrained.pth'
   SIGMA: 1.5
   IMAGE_SIZE:
-    - 256
-    - 256
+    - 288
+    - 288
   HEATMAP_SIZE:
-    - 64
-    - 64
+    - 74
+    - 74
   EXTRA:
     FINAL_CONV_KERNEL: 1
     STAGE2:

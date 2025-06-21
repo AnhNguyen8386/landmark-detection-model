@@ -20,8 +20,8 @@ MODEL:
     - 256
     - 256
   HEATMAP_SIZE:
-    - 64
-    - 64
+    - 74
+    - 74
   EXTRA:
     FINAL_CONV_KERNEL: 1
     STAGE2:
