@@ -81,7 +81,8 @@ def process_image(path, yolo, model, device, collect_results=None):
         landmarks = preds[0].tolist()
 
         for x, y in landmarks:
-            cv2.circle(img, (int(x), int(y)), 1, (0, 255, 0), -1)
+            cv2.circle(img, (int(x), int(y)), 6, (0, 0, 0), -1)
+            cv2.circle(img, (int(x), int(y)), 4, (0, 255, 255), -1)
             total += 1
 
         x1, y1, x2, y2 = map(int, box)
